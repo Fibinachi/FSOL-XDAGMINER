@@ -1,0 +1,12 @@
+{
+    "idf.flashType": "UART",
+    "idf.espIdfPathWin": "C:\\ESP\\5.4\\ESPIDF",
+    "idf.toolsPathWin": "C:\\esp\\v5.4\\esp-idf\\tools",
+    "idf.pythonInstallPath": "C:\\python\\\\3.11.2\\python.exe",
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32s3"
+    },
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ]
+}
