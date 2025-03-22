@@ -1,0 +1,70 @@
+/**
+ * @file
+ * @brief Main header includes for the Namecoin Mining Device
+ * 
+ * This file contains all necessary library includes for the Namecoin mining device.
+ * The included libraries provide the following functionality:
+ * 
+ * - WiFi.h: Core WiFi functionality for network connectivity
+ * - WiFiClient.h: Client implementation for WiFi connections
+ * - WebServer.h: Web server functionality for configuration interface
+ * - ESPmDNS.h: Multicast DNS for network service discovery
+ * - mbedtls/sha256.h: SHA-256 cryptographic hash function implementation
+ * - ArduinoJson.h: JSON parsing and creation functionality
+ * - Preferences.h: Persistent storage for device configuration
+ * - WiFiClientSecure.h: Secure WiFi client for encrypted connections
+ * - AESLib.h: AES encryption functionality
+ * - esp_random.h: Hardware random number generator
+ * - base64.h: Base64 encoding/decoding utilities
+ * - esp_task_wdt.h: Watchdog timer functionality
+ * - UPnP_Generic.h: Universal Plug and Play functionality
+ * 
+ * These libraries enable the device to:
+ * - Connect to WiFi networks
+ * - Provide a web interface for configuration
+ * - Perform cryptographic operations for mining
+ * - Store persistent configuration data
+ * - Establish secure connections to mining pools
+ * - Generate random numbers for encryption
+ * - Monitor system stability
+ * - Handle network discovery and port forwarding
+ */
+
+// Include the AES encryption library for secure data handling.
+#include <AESLib.h>
+
+// Include the ArduinoJson library for JSON parsing and creation.
+#include <ArduinoJson.h>
+
+// Include the base64 library for encoding and decoding data.
+#include <base64.h>
+
+// Include the ESPmDNS library for multicast DNS service discovery.
+#include <ESPmDNS.h>
+
+// Include the ESP32 random number generator library.
+#include <esp_random.h>
+
+// Include the ESP32 task watchdog timer library.
+#include "esp_task_wdt.h"
+
+// Include the mbedtls SHA-256 library for cryptographic hashing.
+#include <mbedtls/sha256.h>
+
+// Include the Preferences library for persistent storage of device configuration.
+#include <Preferences.h>
+
+// Include the UPnP_Generic library for Universal Plug and Play functionality.
+#include <UPnP_Generic.h> // https://github.com/khoih-prog/UPnP_Generic
+
+// Include the WebServer library for creating a web server interface.
+#include <WebServer.h>
+
+// Include the WiFi library for core WiFi functionality.
+#include <WiFi.h>
+
+// Include the WiFiClient library for client implementation of WiFi connections.
+#include <WiFiClient.h>
+
+// Include the WiFiClientSecure library for secure WiFi client connections.
+#include <WiFiClientSecure.h>
